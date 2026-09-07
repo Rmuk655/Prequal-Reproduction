@@ -82,8 +82,8 @@ Prequal-Reproduction/
 ├── backend/
 │   ├── CMakeLists.txt
 │   ├── include/
-│   │   ├── state.hpp
-│   │   └── workload.hpp
+│   │   ├── state.h
+│   │   └── workload.h
 │   └── src/
 │       ├── main.cpp
 │       ├── state.cpp
@@ -96,10 +96,10 @@ Prequal-Reproduction/
 ├── load-balancer/
 │   ├── CMakeLists.txt
 │   ├── include/
-│   │   ├── router.hpp
-│   │   ├── candidate_selection.hpp
-│   │   ├── server_state.hpp
-│   │   └── probe_manager.hpp
+│   │   ├── router.h
+│   │   ├── candidate_selection.h
+│   │   ├── server_state.h
+│   │   └── probe_manager.h
 │   └── src/
 │       ├── main.cpp
 │       ├── router.cpp
@@ -114,7 +114,7 @@ Prequal-Reproduction/
 ├── workload-generator/
 │   ├── CMakeLists.txt
 │   ├── include/
-│   │   └── generator.hpp
+│   │   └── generator.h
 │   └── src/
 │       ├── main.cpp
 │       └── generator.cpp
