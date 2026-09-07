@@ -71,8 +71,9 @@
                      │ • RIF distribution   │
                      └──────────────────────┘
 
-## Directory Structure
+## Project Structure
 
+```text
 Prequal-Reproduction/
 ├── README.md
 ├── .gitignore
@@ -136,3 +137,4 @@ Prequal-Reproduction/
 │
 └── results/
     └── .gitkeep
+```
