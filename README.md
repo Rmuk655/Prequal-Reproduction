@@ -74,41 +74,34 @@
 ## Directory Structure
 
 Prequal-Reproduction/
-│
 ├── README.md
 ├── .gitignore
-│
-├── docs/
-│   ├── architecture.md
-│   ├── prequal-notes.md
-│   └── experiments.md
 │
 ├── backend/
 │   ├── Cargo.toml
 │   └── src/
 │       ├── main.rs
 │       ├── state.rs
-│       ├── handlers/
-│       │   ├── work.rs
-│       │   ├── probe.rs
-│       │   └── health.rs
-│       └── workload.rs
+│       ├── workload.rs
+│       └── handlers/
+│           ├── mod.rs
+│           ├── work.rs
+│           ├── probe.rs
+│           └── health.rs
 │
 ├── load-balancer/
 │   ├── Cargo.toml
 │   └── src/
 │       ├── main.rs
-│       │
-│       ├── policies/
-│       │   ├── mod.rs
-│       │   ├── random.rs
-│       │   ├── round_robin.rs
-│       │   └── prequal.rs
-│       │
+│       ├── router.rs
 │       ├── candidate_selection.rs
 │       ├── server_state.rs
 │       ├── probe_manager.rs
-│       └── router.rs
+│       └── policies/
+│           ├── mod.rs
+│           ├── random.rs
+│           ├── round_robin.rs
+│           └── prequal.rs
 │
 ├── workload-generator/
 │   ├── Cargo.toml
@@ -125,7 +118,6 @@ Prequal-Reproduction/
 │   │   ├── baseline.yaml
 │   │   ├── antagonist_load.yaml
 │   │   └── heterogeneous_servers.yaml
-│   │
 │   └── run_experiment.py
 │
 ├── metrics/
@@ -136,6 +128,11 @@ Prequal-Reproduction/
 │   ├── Dockerfile.backend
 │   ├── Dockerfile.load-balancer
 │   └── docker-compose.yml
+│
+├── docs/
+│   ├── architecture.md
+│   ├── prequal-notes.md
+│   └── experiments.md
 │
 └── results/
     └── .gitkeep
